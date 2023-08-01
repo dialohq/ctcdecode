@@ -1,3 +1,8 @@
 [build-system]
 requires = ["setuptools", "torch"]
 build-backend = "setuptools.build_meta"
+
+[tool.poetry.dependencies]
+torch = [
+    {url = "https://download.pytorch.org/whl/cu113/torch-1.12.1%2Bcu113-cp39-cp39-linux_x86_64.whl", platform = "linux", python = ">=3.9 <3.10"},
+]
